@@ -1,35 +1,31 @@
-<html lang="en"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-  <title></title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-</head>
-<body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a></div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <h1 class="header center orange-text">Challenges</h1>
-    </div>
-  </div>
+    <title>NIZKCTF platform</title>
 
+    <!-- MDL -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500|Roboto+Mono|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://code.getmdl.io/1.3.0/material.indigo-light_blue.min.css'>
+    <link rel='stylesheet' href='frontend/css/main.css'>
 
-  <div class="container">
-    <div class="section">
-      <div class="row" id="challenges"></div>
-      <div class="row" id="modals"></div>
-    </div>
-  </div>
+    <!-- Dialogs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.7/dialog-polyfill.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.7/dialog-polyfill.min.css" />
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="frontend/js/functions.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
-
-
-</body></html>
+    <!-- Event.focusin -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=Event.focusin"></script>
+  </head>
+  <body>
+    <script src="frontend/js/elm.min.js"></script>
+    <script>
+      var app = Elm.Main.fullscreen();
+      app.ports.title.subscribe(function(title) {
+        document.title = title;
+      });
+    </script>
+  </body>
+</html>

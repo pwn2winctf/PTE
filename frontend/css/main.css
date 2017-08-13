@@ -1,0 +1,2 @@
+@media screen and (max-width:1024px){.mdl-layout__tab-bar{width:calc(100% - 120px) !important;}}
+.mdl-layout__tab .material-icons{vertical-align:middle;padding:0 5px 0 5px;}
