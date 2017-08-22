@@ -2,6 +2,8 @@
 
 Welcome to the Pwn2Win CTF **Platform Test Edition**.
 
+**Important**: This test edition is over. If you are looking for registration on Pwn2Win 2017, go to https://github.com/pwn2winctf/2017.
+
 ## Registration
 1. All team members must have a GitHub account and [configure a SSH key in their account settings](https://github.com/settings/keys).
 
